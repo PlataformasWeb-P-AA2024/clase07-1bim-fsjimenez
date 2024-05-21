@@ -67,6 +67,7 @@ for registro in registros:
 #     # posición 0 el club
 #     # posición 1 el jugador 
 #     # que cumplen con la condición
+    c=registro[0]
     print(registro[0].nombre) # El club
     print(registro[1].nombre) # El jugador
     print("------------------")

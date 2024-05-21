@@ -24,14 +24,18 @@ session = Session()
 # estudiantes = session.query(Estudiante).all()
 # print(estudiantes)
 
-# print("--------------------------------------")
+ print("--------------------------------------")
 # Obtener todos los registros de la clase Modulo
 # modulos = session.query(Modulo).all()
 # print(modulos)
 
-# print("--------------------------------------")
+ print("--------------------------------------")
 # Obtener todos los registros de la clase Matricula
-# matriculas = session.query(Matricula).all()
+ matriculas = session.query(Matricula).all()
+
+for m in matriculas:
+    print("Nombre es: %s, y el Apellido: %d" %(m.estudiante.nombre, m.estudiante.apellido))
+
 
 # nombre y apellido del estudiante de cada matrícula
 

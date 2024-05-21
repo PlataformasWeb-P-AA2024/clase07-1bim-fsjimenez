@@ -23,4 +23,4 @@ matriculas = session.query(Matricula, Estudiante, Modulo).join(Estudiante)\
 .join(Modulo).all()
 
 for m in matriculas:
-    print(m)
+    print("Nombre es: %s, y el Apellido: %d" %(m.estudiante.nombre, m.estudiante.apellido))
